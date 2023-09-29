@@ -1,9 +1,9 @@
 from django.urls import path
 
-from revenue.views import revenue_list
+from revenue.views import RevenueListView
 
 urlpatterns = [
-    path("", revenue_list, name="revenue-list")
+    path("", RevenueListView.as_view(), name="revenue-list")
 ]
 
 app_name = "revenue"
